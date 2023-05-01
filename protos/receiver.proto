@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "ex.grpc";
+
+package gData;
+
+// The greeting service definition.
+service GetData {
+    rpc GetProperty (PropRequest) returns (PropReply) {}
+}
+
+message PropRequest {
+    string propName = 1;
+}
+
+message PropReply {
+  int32 val = 1;
+}

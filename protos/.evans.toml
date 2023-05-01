@@ -1,0 +1,4 @@
+[default]
+protoFile = ["receiver.proto"]
+package = "gData"
+service = "GetData"
